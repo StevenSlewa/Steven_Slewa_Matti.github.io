@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" type="image/png-icon" href="imgs/sue-logo.png">
+    <title>StevenSlewaMati</title>
+</head>
+<body>
+    <header>
+        <div class="header-info">
+            <span class="logo">
+                <img src="imgs/sue-logo.png" alt="Salahhadin_Logo" height="55">
+            </span>
+            <h1>Steven Slewa Mati's Web Assignment</h1>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blogs.html">Blog</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li class="dropdown">
+                <a href="#">LayoutDesign</a>
+                <ul class="dropdown-content">
+                    <li><a href="flexbox.html">FlexBox Layout with Side nav</a></li>
+                    <li><a href="float.html">Float Layout with side nav</a></li>
+                    <li><a href="grid.html">Blog Grid View</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="signup.html">Signup</a></li>
+            <li><a href="signin.html">Signin</a></li>
+        </ul>
+    </nav>
+    <main class="signup-main">
+        <h2>Signup form</h2>
+
+        <form action="#">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Username">
+            
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" placeholder="Full Name">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="domain@example.com">
+             
+            <label for="telephone">Telephone</label>
+            <input type="tel" id="telephone" placeholder="00964 000 000 00 00">
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password">
+            
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob">
+    
+            <label for="profile-color">Profile Color</label>
+            <input type="color" id="profile-color" value="#9900ff">
+    
+            <fieldset>
+                <legend>Marital status</legend>
+                <p>
+                    <input type="radio" id="single" value="single" name="status">
+                    <label for="single">Single</label>
+                </p>
+                <p>
+                    <input type="radio" id="married" value="married" name="status">
+                    <label for="married">Married</label>
+                </p>
+                <p>
+                    <input type="radio" id="it_is_private" value="private" disabled name="status">
+                    <label for="it_is_private"> It is private</label>
+                </p>
+            </fieldset>
+            
+            <label for="children-selection">No. of Children</label>
+            <select name="children-selection" id="children-selection">
+                <option value="none">none</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+    
+            <label for="degree">Choose your Degrees</label>
+            <select name="degree" id="degree" multiple>
+                <option value="diploma">Diploma</option>
+                <option value="bsc">Bachelorof Science (BSc)</option>
+                <option value="ba">Bachelor of Arts (BA)</option>
+                <option value="high_diploma">High Diploma</option>
+                <option value="msc">Master of Science (MSc)</option>
+            </select>
+    
+            <label for="about">About Yourself</label>
+            <textarea name="about" id="about" cols="30" rows="4" placeholder="About Yourself"></textarea>
+    
+            <label for="cv">Upload your CV</label>
+            <input type="file" id="cv">
+    
+            <fieldset>
+                <legend>Gender</legend>
+                <p>
+                    <input type="radio" id="male" value="male" name="gender">
+                    <label for="male">Male</label>
+                </p>
+                <p>
+                    <input type="radio" id="female" value="female" name="gender">
+                    <label for="female">female</label>
+                </p>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Agreements</legend>
+                <p class="agreement-text">Please read the terms and agreements</p>
+                <p>
+                    <input type="checkbox" id="read" name="agreements">
+                    <label for="read">i have read all the terms</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="yes" name="agreements">
+                    <label for="yes">Yes, i'm agree</label>
+                </p>
+            </fieldset>
+            <div class="buttons">
+                <button id="signup-btn" type="submit">Signup</button>
+                <button id="reset-btn" type="reset">Reset</button> 
+            </div>              
+        </form>
+    </main>
+    <footer>
+        <div>
+            <p>sitemap</p>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">contact</a>
+            <a href="signin.html">login</a>
+        </div>
+        <div>
+            <p>Terms and quick links</p>
+            <a href="#">terms of usage</a>
+            <a href="#">link 1</a>
+            <a href="#">link 2</a>
+            <a href="#">link 3</a>
+        </div>
+        <div>
+            <p>Address and contact</p>
+            <p>city: Iraq, Erbil</p> 
+            <p>Email: ensw06618@student.su.edu.krd</p>
+            <p>phone: +96407501684553</p>                
+        </div>
+    </footer>
+</body>
+</html>

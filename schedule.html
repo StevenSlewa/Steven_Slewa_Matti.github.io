@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" type="image/png-icon" href="imgs/sue-logo.png">
+    <title>StevenSlewaMati</title>
+</head>
+<body>
+    <header>
+        <div class="header-info">
+            <span class="logo">
+                <img src="imgs/sue-logo.png" alt="Salahhadin_Logo" height="55">
+            </span>
+            <h1>Steven Slewa Mati's Web Assignment</h1>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blogs.html">Blog</a></li>
+            <li class="active"><a href="schedule.html">Schedule</a></li>
+             <li class="dropdown">
+                <a href="#">LayoutDesign</a>
+                <ul class="dropdown-content">
+                    <li><a href="flexbox.html">FlexBox Layout with Side nav</a></li>
+                    <li><a href="float.html">Float Layout with side nav</a></li>
+                    <li><a href="grid.html">Blog Grid View</a></li>
+                </ul>
+            </li>
+            <li><a href="signup.html">Signup</a></li>
+            <li><a href="signin.html">Signin</a></li>
+            
+        </ul>
+    </nav>
+    <main class="schedule-main">
+        <h2>Seminar Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="3">Day</th>
+                    <th colspan="6">Seminars</th>
+                </tr>
+                <tr>
+                    <th colspan="3">Morning Sessions</th>
+                    <th colspan="3">Evenning Sessions</th>
+                </tr>
+                <tr>
+                    <th>Begin</th>
+                    <th>End</th>
+                    <th>Topic</th>
+                    <th>Begin</th>
+                    <th>End</th>
+                    <th>Topic</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2" class="day">Monday</td>
+                    <td rowspan="2">8:00 AM</td>
+                    <td rowspan="2">11:00 AM</td>
+                    <td>Introduction to XML</td>
+                    <td>01:30 PM</td>
+                    <td>3:00 PM</td>
+                    <td>HTML Language</td>
+                </tr>
+                <tr>
+                    <td>CSS Language</td>
+                    <td>03:30 PM</td>
+                    <td>5:00 PM</td>
+                    <td>Web Accessibility</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" class="day">Tuesday</td>
+                    <td>08:00 AM</td>
+                    <td>10:00 AM</td>
+                    <td rowspan="2">Introduction to Javascript</td>
+                    <td>02:00 PM</td>
+                    <td>03:00 PM</td>
+                    <td>The DOM</td>
+                </tr>
+                <tr>
+                    <td>10:30 AM</td>
+                    <td>12:00 PM</td>
+                    <td rowspan="2">04:00 PM</td>
+                    <td rowspan="2">06:00 PM</td>
+                    <td rowspan="2">Advanced Javascript</td>
+                </tr>
+                <tr>
+                    <td>09:00 AM</td>
+                    <td>11:00 AM</td>
+                    <td>Web Design and Bootstrap</td>
+                </tr>
+                <tr>
+                    <td class="day">Wednesday</td>
+                    <td>09:00 AM</td>
+                    <td>11:00 AM</td>
+                    <td>Introduction to ReactJS</td>
+                    <td>01:00 Pm</td>
+                    <td>03:00 PM</td>
+                    <td>Introduction to NodeJS</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <div>
+            <p>sitemap</p>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">contact</a>
+            <a href="signin.html">login</a>
+        </div>
+        <div>
+            <p>Terms and quick links</p>
+            <a href="#">terms of usage</a>
+            <a href="#">link 1</a>
+            <a href="#">link 2</a>
+            <a href="#">link 3</a>
+        </div>
+        <div>
+            <p>Address and contact</p>
+            <p>city: Iraq, Erbil</p> 
+            <p>Email: ensw06618@student.su.edu.krd</p>
+            <p>phone: +96407501684553</p>                
+        </div>
+    </footer>
+</body>
+</html>

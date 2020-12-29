@@ -1,0 +1,598 @@
+*{
+    padding: 0 ;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ************* EXTRAS ************** */
+
+/* selection highlight */
+::selection{
+    color: maroon;
+    background: peachpuff;
+}
+
+/* scrollbar */
+::-webkit-scrollbar{
+    width: 12px;
+}
+  /* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px rgb(43, 43, 43); 
+    border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:#cecece; 
+    border-radius: 10px;
+}  
+/* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: maroon;
+}  
+/* ******** END of EXTRAS ********** */
+
+header .header-info{
+    background-color: #ffefe0;
+    border-top: maroon 10px solid;
+    padding: 25px 150px;
+}
+header .logo img{
+    position: absolute;
+    height: 55px;
+    top: 25px;
+}
+
+header h1{
+    margin: 0 65px;
+}
+nav.main-nav{
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+    background-color: peachpuff;
+}
+.main-nav ul{
+    margin: 0 150px;
+}
+.main-nav li{
+    margin-right: 30px;
+    padding: 10px 10px;
+    display: inline-block;
+}
+.main-nav>ul>li:hover{
+    border-bottom: maroon 3px solid;
+}
+.main-nav>ul>li:hover a{
+    color: black;
+}
+.main-nav a{
+    color: rgb(87, 87, 87);
+    text-decoration: none;
+}
+.main-nav .active{
+    border-bottom: maroon 3px solid;
+}
+.main-nav .active a{
+    color: black;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    left: -150px;
+    bottom: -147px;
+    position: absolute;
+    min-width: 280px;
+    box-shadow: 0 2px 5px 0 gray;
+    background: #ffdfc5;
+    z-index: 1;
+}
+.dropdown-content li{
+    width: 100%;
+    padding: 15px 15px;
+}
+.dropdown-content li:hover{
+    background-color: #ffefe0;
+}
+ul.dropdown-content li:hover a{
+    color: maroon;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+nav :nth-child(4)::after{
+    content: "";
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #000000;
+    font-size: 0;
+    margin-left: 5px;
+    line-height: 0;
+}
+
+/*    **************** end of header *************   */
+main.home-main{
+    margin: 0 150px;
+}
+main .img-sliding{
+    position: relative;
+    margin: 15px 0;
+}
+main .img-sliding img{
+    height: 500px;
+    width: 100%;
+}
+main .img-sliding .arrow{
+    cursor: pointer;
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    background-color: #ff7f5077;
+    border-radius: 100%;
+    top: 45%;
+}
+main .img-sliding .right-arrow{
+    right: 15px;
+}
+main .img-sliding .left-arrow{
+    left: 15px;
+}
+
+main .img-sliding div{
+    display: flex;
+    justify-content: center;
+}
+main .img-sliding div span{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 1px;
+    border-radius: 100px;
+    border: #c2c2c2 3px solid;
+    background-color: #2e2e2e;
+}
+main .img-sliding div span:hover{
+    background-color:#c2c2c2;
+    border-color: #2e2e2e;
+}
+
+main .animated-buttons{
+    display: flex;
+    margin: 25px 0;
+    justify-content: space-between;
+}
+main .animated-buttons button{
+    width: 290px;
+    height: 90px;
+    background-color: white;
+    border: coral 2px solid;
+    transition: 0.3s;
+}
+.animated-buttons button:hover{
+    transform: rotate(-4deg);
+    color: #ff5e00;
+    font-weight: 600;
+    background:linear-gradient(-180deg, white, #ffd3b5);
+    box-shadow: inset 0 0 30px coral; 
+}
+main .animated-buttons button a {
+    text-decoration: none;
+    color: coral;
+}
+
+main .recent-articles > h2{
+    text-align: center;
+    color: coral;
+    margin: 50px 0 20px 0;
+}
+main .recent-articles article{
+    margin-bottom: 35px;
+}
+
+main .recent-articles .author p{
+    margin-top: 5px;
+    color: gray;
+}
+.author a{
+    color: rgb(0, 104, 202);
+}
+.author a:hover{
+    color: maroon;
+}
+
+main .recent-articles li{
+    list-style: none;
+}
+/* main .recent-articles .article-1 img{
+    margin: 10px 10px 10px 0;
+    float: left;
+    height: 200px;
+    width: 470px;
+}
+main .recent-articles .article-2 img{
+    margin: 15px 0px 0 10px;
+    float: right;
+    height: 200px;
+    width: 470px;
+} */
+main .recent-articles ul li:nth-child(even) img{
+    margin: 15px 0px 0 10px;
+    float: right;
+    height: 200px;
+    width: 470px;
+}
+main .recent-articles ul li:nth-child(odd) img{
+    margin: 10px 10px 10px 0;
+    float: left;
+    height: 200px;
+    width: 470px;
+}
+main .recent-articles p{
+    color: black;
+    text-align: justify;
+}
+
+/*    **************** end of main *************   */
+
+footer{
+    border-top: maroon 10px solid;
+    background-color: peachpuff;
+    height: 175px;
+    display: flex;
+    justify-content: space-around;
+}
+footer div{
+display: flex;
+flex-direction: column;
+}
+footer div a{
+    color: #444444;
+    text-decoration: none;
+}
+footer div a:hover{
+    color: maroon;
+}
+footer div :nth-child(1){
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+
+/* ***************** END OF HOME ************** */
+
+main.blogs-main{
+    margin: 30px 150px;
+}
+
+.blogs-main ul li{
+    list-style: none;
+}
+.blogs-main .header{
+    margin-bottom: 5px;
+}
+.blogs-main article{
+    margin: 10px 0 35px 0;
+}
+.blogs-main article .author{
+    margin-top: 5px;
+    color: gray;
+}
+.blogs-main article .author a{
+    color: #0c74b4;
+}
+.blogs-main article .author a:hover{
+    color: maroon;
+}
+
+.blogs-main ul li:nth-child(even) img{
+    margin: 10px 0 10px 10px;
+    height: 240px;
+    width: 470px;
+    float: right;
+}
+.blogs-main ul li:nth-child(odd) img{
+    margin: 10px 10px 10px 0;
+    height: 240px;
+    width: 470px;
+    float: left;
+}
+
+.blogs-main article .paragraphs{
+    margin: 20px 0 0 0;
+    color: gray;
+    text-align: justify;
+}
+
+
+/* *********END OF BLOGS ************* */
+
+main.schedule-main{
+    margin: 30px 150px;
+}
+
+.schedule-main h2{
+    margin-bottom: 20px;
+}
+
+.schedule-main table{
+    width: 100%;
+    height: 340px;
+    border-collapse: collapse;
+}
+
+.schedule-main table thead{
+    background-color:#ffefe0;
+    color: maroon;
+}
+.schedule-main .day{
+    color: maroon;
+    text-align: center;
+    font-weight: 600;
+}
+
+.schedule-main td{
+    border: maroon 1.5px solid;
+    padding: 0 10px;
+}
+.schedule-main th{
+    padding: 7px;
+    border: maroon 2px solid;
+}
+
+
+/* ********* END OF SCHEDULE ********* */
+
+main.flexbox-main{
+    display: flex;
+    justify-content: stretch;
+    margin: 20px 150px;
+}
+main.flexbox-main aside{
+    width: 100%;
+    padding: 20px;
+    background-color: #ffefe0;
+    border-top: maroon 4px solid;
+}
+.flexbox-main aside a{
+    display: block;
+    margin: 30px 0;
+    text-decoration: none;
+    color: #0060a0;
+}
+.flexbox-main aside a:hover{
+    color: maroon;
+}
+main.flexbox-main ul{
+    list-style: none;
+}
+.flexbox-main article .header{
+    margin: 20px 0;
+    display: block;
+}
+.flexbox-main .article-1 img, .flexbox-main .article-2 img, .flexbox-main .article-3 img{
+    display: block;
+    margin: 20px 0;
+    height: 400px;
+    width: 98%;
+}
+.flexbox-main .article-1 p, .flexbox-main .article-2 p, .flexbox-main .article-3 p{
+    width: 98%;
+    text-align: justify;
+}
+
+
+/* *********** END OF FLEXBOX *********** */
+
+main.float-main{
+    margin: 30px 150px;
+}
+.float-main section{
+    float: left;
+    width: 70%;
+}
+.float-main ul{
+    list-style: none;
+}
+.float-main article .header{
+    margin: 20px 0;
+    display: block;
+}
+.float-main .article-1 img,.float-main .article-2 img,.float-main .article-3 img{
+    display: block;
+    margin: 20px 0;
+    height: 400px;
+    width: 100%;
+}
+.float-main .article-1 p,.float-main .article-2 p,.float-main .article-3 p{
+    text-align: justify;
+}
+
+.float-main aside{
+    float: right;
+    width: 29%;
+    padding: 20px;
+    background-color: #ffefe0;
+    border-top: maroon 4px solid;
+}
+.float-main aside a{
+    display: block;
+    margin: 30px 0;
+    text-decoration: none;
+    color: #0060a0;
+}
+.float-main aside a:hover{
+    color: maroon;
+}
+footer.float-footer{
+    clear: both;
+}
+
+
+/* ******** END OF FLOAT ********* */
+
+main.grid-main{
+    margin: 30px 150px;
+}
+.grid-container{
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-auto-rows: max-content;
+    column-gap: 2%;
+    row-gap: 30px;
+}
+
+.grid-main article img{
+    margin: 20px 0;
+    height: 315px;
+    width: 100%
+}
+.grid-main article p{
+    text-align: justify;
+}
+
+
+/* ******** END OF GRID ******** */
+
+main.signin-main{
+    margin: 50px 150px;
+}
+.signin-main a{
+    color: rgb(6, 103, 168);
+}
+.signin-main a:hover{
+    color: maroon;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 83px 285px;
+}
+.form label{
+    display: block;
+    margin-bottom: 3px;
+}
+.form input{
+    margin-bottom: 20px;
+    background-color: #fff7ec;
+    border: peachpuff 2px solid;
+    border-bottom: peachpuff 5px solid;
+    border-radius: 7px 7px 0 0;
+    padding: 10px;
+}
+.form input:focus{
+    background-color: white;
+}
+.form div{
+    display: flex;
+    justify-content: space-between;
+}
+.form div button{
+    background-color: #fff7ec;
+    border: peachpuff 3px solid;
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+}
+.form div button:hover{
+    background-color: peachpuff;
+}
+
+
+/* ******** END OF SIGNIN ********* */
+
+main.signup-main{
+    margin: 30px 150px;
+}
+.signup-main form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.signup-main form label{
+    margin-bottom: 3px;
+    display: block;
+}
+
+.signup-main form input , .signup-main form select{
+    margin-bottom: 15px;
+    padding: 10px;
+    border: peachpuff 2px solid;
+    border-bottom: peachpuff 5px solid;
+    border-radius: 7px 7px 0 0;
+    background-color: #fff7ec;
+}
+
+.signup-main form #profile-color{
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+}
+
+.signup-main form fieldset{
+    border: peachpuff 2px solid;
+    border-bottom: peachpuff 5px solid;
+    border-radius: 7px 7px 0 0;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+}
+.signup-main form legend{
+    border: peachpuff 2px solid;
+    border-bottom: peachpuff 5px solid;
+    border-radius: 7px 7px 0 0;
+    background-color: #fff7ec;
+    padding: 5px 20px;
+}
+.signup-main form fieldset label{
+    display: inline-block;
+}
+.signup-main form textarea{
+    border: peachpuff 2px solid;
+    border-bottom: peachpuff 5px solid;
+    border-radius: 7px 7px 0 0;
+    background-color: #fff7ec;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+}
+.signup-main form .agreement-text{
+    margin: 15px 0;
+}
+
+.signup-main form .buttons{
+    display: flex;
+    justify-content: space-between;
+}
+#signup-btn{
+    background-color: #fff7ec;
+    border: peachpuff 2px solid;
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+}
+#reset-btn{
+    background-color: #ffbfbf;
+    border: red 2px solid;
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+}
+#signup-btn:hover{
+    background-color: peachpuff;
+}
+#reset-btn:hover{
+    background-color: rgb(255, 47, 47);
+}
+form input:focus, form select:focus, form textarea:focus{
+    background-color: white;
+}
+
+
+/* ********* END OG SIGNUP ********* */
